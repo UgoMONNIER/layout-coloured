@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Creative Modern Webpage" />
+    <meta
+      property="og:description"
+      content="A modern webpage with GSAP animations, PWA support, and creative design."
+    />
+    <meta property="og:image" content="image-preview-url.jpg" />
+    <meta
+      property="og:url"
+      content="https://example.com/creative-modern-webpage"
+    />
+    <title>Creative Modern Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-blue-600 text-white py-4 sticky top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Creative Webpage</h1>
+          <nav class="flex space-x-6">
+            <a href="#section1" class="px-4 hover:text-gray-300">Home</a>
+            <a href="#section2" class="px-4 hover:text-gray-300">Features</a>
+            
+            <!-- Mégamenu Dropdown -->
+            <div class="relative group">
+              <button class="px-4 py-2 hover:text-gray-300">Services</button>
+              <div id="megamenu" class="absolute hidden bg-white text-black shadow-lg w-full p-6 mt-2 rounded-md z-40 group-hover:block">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                  <div>
+                    <h3 class="font-semibold text-lg mb-2">Web Design</h3>
+                    <ul>
+                      <li><a href="#web-design-1" class="block px-2 py-1 hover:bg-blue-100">UI/UX Design</a></li>
+                      <li><a href="#web-design-2" class="block px-2 py-1 hover:bg-blue-100">Responsive Design</a></li>
+                      <li><a href="#web-design-3" class="block px-2 py-1 hover:bg-blue-100">Wireframing</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg mb-2">Development</h3>
+                    <ul>
+                      <li><a href="#development-1" class="block px-2 py-1 hover:bg-blue-100">Frontend</a></li>
+                      <li><a href="#development-2" class="block px-2 py-1 hover:bg-blue-100">Backend</a></li>
+                      <li><a href="#development-3" class="block px-2 py-1 hover:bg-blue-100">Full Stack</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-lg mb-2">Marketing</h3>
+                    <ul>
+                      <li><a href="#marketing-1" class="block px-2 py-1 hover:bg-blue-100">SEO</a></li>
+                      <li><a href="#marketing-2" class="block px-2 py-1 hover:bg-blue-100">Social Media</a></li>
+                      <li><a href="#marketing-3" class="block px-2 py-1 hover:bg-blue-100">PPC Advertising</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#section3" class="px-4 hover:text-gray-300">Contact</a>
+          </nav>
+        </div>
+      </header>
+      
+
+      
+
+    <main class="mt-20">
+      <section
+        id="section1"
+        class="section bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white"
+      >
+        <h2 class="text-5xl font-bold text-center mb-4">
+          Welcome to Innovation
+        </h2>
+        <p class="text-center text-lg">
+          Discover creative solutions tailored for the future.
+        </p>
+      </section>
+
+      <section id="section2" class="section bg-white text-gray-800">
+        <div class="container mx-auto grid-container">
+          <div class="bg-blue-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Interactive Design</h3>
+            <p>Seamless interactions for better user experience.</p>
+          </div>
+          <div class="bg-green-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Responsive Layouts</h3>
+            <p>Optimized for devices of all sizes.</p>
+          </div>
+          <div class="bg-yellow-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Custom Animations</h3>
+            <p>Engaging visuals using GSAP and Tailwind CSS.</p>
+          </div>
+          <div class="bg-purple-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Speed Optimized</h3>
+            <p>Built with performance in mind, leveraging HTTP/3.</p>
+          </div>
+          <div class="bg-red-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">PWA Features</h3>
+            <p>Offline-ready and installable as an app.</p>
+          </div>
+          <div class="bg-cyan-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Open Graph Support</h3>
+            <p>Enhanced social media previews for better reach.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4" class="section bg-gray-100 text-gray-800">
+        <div class="container mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-6 rounded shadow-lg col-span-2">
+            <h3 class="text-3xl font-semibold mb-2">Large Feature Highlight</h3>
+            <p>
+              A detailed overview of a key feature with supporting text and
+              imagery.
+            </p>
+          </div>
+          <div class="bg-blue-200 p-6 rounded shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">Compact Feature 1</h4>
+            <p>Concise details about an additional feature.</p>
+          </div>
+          <div class="bg-green-200 p-6 rounded shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">Compact Feature 2</h4>
+            <p>Concise details about an additional feature.</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section5"
+        class="section bg-gradient-to-r from-yellow-200 to-orange-300 text-gray-900"
+      >
+        <div class="container mx-auto grid gap-6 grid-cols-1 md:grid-cols-3">
+          <div class="bg-white p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold">Feature One</h3>
+            <p>Innovative design for all platforms.</p>
+          </div>
+          <div
+            class="md:col-span-2 bg-gray-800 text-white p-8 rounded shadow-lg"
+          >
+            <h3 class="text-3xl font-semibold">Main Attraction</h3>
+            <p>Highlight the most essential feature in a larger layout.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section6" class="section bg-white text-gray-800">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 p-4">
+              <div class="bg-blue-300 p-6 rounded shadow-lg">
+                <h3 class="text-xl font-semibold">One Third</h3>
+                <p>Unique layout split into thirds.</p>
+              </div>
+            </div>
+            <div class="w-full md:w-2/3 p-4">
+              <div class="bg-purple-300 p-6 rounded shadow-lg">
+                <h3 class="text-xl font-semibold">Two Thirds</h3>
+                <p>A larger segment for more detailed information.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="section7"
+        class="section bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white"
+      >
+        <h2 class="text-5xl font-bold text-center mb-4">
+          Welcome to Innovation
+        </h2>
+        <p class="text-center text-lg">
+          Discover creative solutions tailored for the future.
+        </p>
+      </section>
+
+      <section id="section8" class="section bg-white text-gray-800">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="relative col-span-1 md:col-span-2">
+            <img
+              src="https://via.placeholder.com/800x400"
+              alt="Feature Image"
+              class="rounded-lg shadow-lg w-full"
+            />
+            <div
+              class="absolute bottom-4 left-4 bg-gray-900 bg-opacity-70 text-white p-4 rounded"
+            >
+              <h3 class="text-3xl font-semibold">Highlight Feature</h3>
+              <p>A captivating visual to draw attention.</p>
+            </div>
+          </div>
+          <div class="bg-blue-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Interactive Design</h3>
+            <p>Seamless interactions for better user experience.</p>
+          </div>
+          <div class="bg-green-100 p-6 rounded shadow-lg">
+            <h3 class="text-2xl font-semibold mb-2">Responsive Layouts</h3>
+            <p>Optimized for devices of all sizes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section9" class="section bg-gray-100 text-gray-800">
+        <div class="container mx-auto grid gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="col-span-2 bg-gradient-to-r from-yellow-300 to-orange-400 text-white p-8 rounded shadow-lg"
+            >
+              <h3 class="text-4xl font-semibold">Large Emphasis Block</h3>
+              <p>A bold, colorful section to showcase a key message.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow-lg">
+              <h3 class="text-2xl font-semibold">Supporting Detail</h3>
+              <p>
+                Additional context or supporting details for the main feature.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-green-100 p-6 rounded shadow-lg">
+              <h3 class="text-2xl font-semibold">Compact Card 1</h3>
+              <p>Concise details about a feature.</p>
+            </div>
+            <div class="bg-blue-100 p-6 rounded shadow-lg">
+              <h3 class="text-2xl font-semibold">Compact Card 2</h3>
+              <p>Concise details about a feature.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section10"
+        class="section bg-gradient-to-r from-pink-200 to-purple-300 text-gray-900 py-16"
+      >
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 gap-8">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Bloc principal -->
+            <div
+              class="lg:col-span-2 bg-gray-800 text-white p-8 rounded-lg shadow-xl flex flex-col justify-between"
+            >
+              <h3 class="text-3xl font-semibold mb-4">Main Focus Area</h3>
+              <p class="text-lg mb-6">
+                This section is dedicated to highlighting a key feature of our
+                product or service. Here, we want to grab the user's attention
+                with an impactful message or visual that communicates the
+                essence of what we're offering. This could be a unique value
+                proposition, an important announcement, or a major benefit of
+                our service.
+              </p>
+              <p class="text-lg mb-6">
+                The purpose of this "Main Focus Area" is to give visitors an
+                immediate understanding of why they should be interested in our
+                product or service. It could also serve as an introduction to a
+                larger narrative or deeper content found further down the page.
+                For instance, this section might be used to explain a special
+                promotion, key feature, or core mission statement.
+              </p>
+              <button
+                class="mt-auto bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-lg shadow-md focus:outline-none transition duration-300"
+              >
+                Learn More
+              </button>
+            </div>
+
+            <!-- Cartes de détail -->
+            <div
+              class="bg-yellow-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <h3 class="text-xl font-semibold mb-3">Detail Card 1</h3>
+              <p class="text-sm">
+                This card can be used to highlight one specific feature or
+                aspect of your offering. It might contain a brief overview, a
+                key benefit, or an explanation of how this feature improves the
+                user's experience. Think of this as a small, digestible block of
+                information that complements the main content above.
+              </p>
+              <p class="text-sm">
+                For example, if you're offering a software product, this card
+                might describe a specific tool or integration that sets you
+                apart from competitors. Or, if you're running a promotion, it
+                could explain the terms and benefits in a concise format.
+              </p>
+            </div>
+            <div
+              class="bg-green-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <h3 class="text-xl font-semibold mb-3">Detail Card 2</h3>
+              <p class="text-sm">
+                Similarly to the first card, this section can be used to
+                highlight another important feature or benefit of your product
+                or service. It could dive deeper into an aspect that may require
+                more explanation or could simply serve as a supporting point to
+                reinforce the main message.
+              </p>
+              <p class="text-sm">
+                For example, you could use this card to showcase testimonials or
+                customer feedback, showing how others have benefited from using
+                your product or service. Alternatively, it might explain another
+                key selling point that deserves attention but isn't the primary
+                focus of the main area.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-blue-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 m-8"
+          >
+            <h3 class="text-xl font-semibold mb-3">Detail Card 3</h3>
+            <p class="text-sm">
+              This final card serves as an additional point of emphasis,
+              focusing on another unique element or feature that could convince
+              the visitor to take action. This could be anything from a visual
+              representation of your service's capabilities, to an explanation
+              of your mission, or even an invitation to engage with your team.
+            </p>
+            <p class="text-sm">
+              In a promotional context, this card might highlight time-sensitive
+              offers or additional benefits available only for a limited time.
+              The key here is to provide meaningful, concise information that
+              complements the main message without overwhelming the visitor.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- JavaScript to toggle the megamenu visibility -->
+
+          <!-- JavaScript to toggle the megamenu visibility on click -->
+    <script>
+    const servicesBtn = document.querySelector('.group > button');
+    const megamenu = document.getElementById('megamenu');
+    
+    servicesBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        megamenu.classList.toggle('hidden');
+    });
+    
+    // Close megamenu if clicked outside
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.group')) {
+        megamenu.classList.add('hidden');
+        }
+    });
+    </script>
+
+    <script>
+      gsap.from("header", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "power2.out",
+      });
+      gsap.from("#section1", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section2", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section3", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section4", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section5", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section6", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section7", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section8", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section9", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#section10", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+      gsap.from("#features div", {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        delay: 0.3,
+      });
+    </script>
+  </body>
+</html>
